@@ -1,10 +1,7 @@
 {
   "rewrites": [
-    { "source": "/orzu-medical/(.*)", "destination": "/orzu-medical/index.html" }
-  ],
-  "build": {
-    "env": {
-      "NPM_FLAGS": "--legacy-peer-deps"
-    }
-  }
+    { "source": "/orzu-medical", "destination": "/index.html" },
+    { "source": "/orzu-medical/", "destination": "/index.html" },
+    { "source": "/orzu-medical/:path*", "destination": "/index.html" }
+  ]
 }
