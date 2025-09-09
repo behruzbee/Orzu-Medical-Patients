@@ -1,0 +1,1 @@
+export { AnalyzesPage } from "./page";
