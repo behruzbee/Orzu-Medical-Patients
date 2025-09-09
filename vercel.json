@@ -2,19 +2,19 @@
   "rewrites": [
     {
       "source": "/orzu-medical/assets/(.*)",
-      "destination": "/assets/$1"
+      "destination": "/orzu-medical/assets/$1"
     },
     {
       "source": "/orzu-medical",
-      "destination": "/index.html"
+      "destination": "/orzu-medical/index.html"
     },
     {
       "source": "/orzu-medical/",
-      "destination": "/index.html"
+      "destination": "/orzu-medical/index.html"
     },
     {
       "source": "/orzu-medical/:path*",
-      "destination": "/index.html"
+      "destination": "/orzu-medical/index.html"
     }
   ]
 }
