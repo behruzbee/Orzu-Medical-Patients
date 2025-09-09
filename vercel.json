@@ -2,8 +2,7 @@
   "rewrites": [
     {
       "source": "/",
-      "destination": "/orzu-medical/",
-      "permanent": true
+      "destination": "/orzu-medical/"
     },
     {
       "source": "/orzu-medical/assets/(.*)",
