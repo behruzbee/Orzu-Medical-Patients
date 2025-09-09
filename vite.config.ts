@@ -9,6 +9,9 @@ export default defineConfig({
   define: {
     global: "globalThis",
   },
+  build: {
+    outDir: "dist/orzu-medical"
+  },
   server: {
     port: 3000,
     open: true,
