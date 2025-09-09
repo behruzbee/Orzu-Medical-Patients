@@ -1,6 +1,11 @@
 {
   "rewrites": [
     {
+      "source": "/",
+      "destination": "/orzu-medical/",
+      "permanent": true
+    },
+    {
       "source": "/orzu-medical/assets/(.*)",
       "destination": "/orzu-medical/assets/$1"
     },
