@@ -1,7 +1,7 @@
 import { Image } from "@mantine/core";
 import { useState } from "react";
-import Lightbox from "react-image-lightbox";
-import "react-image-lightbox/style.css";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
 
 export const PhotoViewer = ({ image }: { image: string }) => {
   const [open, setOpen] = useState(false);
@@ -14,9 +14,11 @@ export const PhotoViewer = ({ image }: { image: string }) => {
         style={{ width: 200, cursor: "pointer" }}
         onClick={() => setOpen(true)}
       />
-      {open && (
-        <Lightbox mainSrc={image} onCloseRequest={() => setOpen(false)} />
-      )}
+      <Lightbox
+        open={open}
+        close={() => setOpen(false)}
+        slides={[{ src: image }]}
+      />
     </>
   );
 };
